@@ -11,24 +11,24 @@ body{
 
 .top-container{
     background: url(/images/top-banner.png);
-    
-    background-repeat: no-repeat;
-   
-  
+    background-repeat: no-repeat; 
 }
 
 .container{
     width: 95%;
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
      display: flex;
      justify-content: space-between;
-    
+     margin-bottom: 5em; 
 }
 h1{
     font-size:3rem ;
     font-weight: 600;
     line-height: 2em;
+}
+p{
+    color: rgb(148, 120, 148);
 }
 h2{
     font-size: 2.5em;
@@ -49,10 +49,7 @@ img{
     
 }
 .inner-container-right{
-   flex-basis: 46%;
-  
-   
-    
+   flex-basis: 46%;  
 }
 .btn{
     display: inline-block;
@@ -65,26 +62,46 @@ img{
     background-image:linear-gradient(#a04d3b,#FF7253);
     margin-top: 1em;
 }
-
 .mid-container{
-    margin: 3em 0;
+    background-image: url(/images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .experience-container{
-    margin-bottom: 4em;
+    background-image: url(/images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
 }
 .inner-container-experience{
-    padding: 1em 1em 5em;
-    background-color: white;
-    
+    padding: 1em 1em  5em 2em;
     width: 46%;
-    box-shadow: 0px 2px 50px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 50px 1px rgba(0, 0, 0, 0.5);
+}
+.inner-container-experience:nth-child(2){
+border-left: 6px solid ;
+border-image: 
+linear-gradient(
+      to bottom, 
+      rgb(36, 33, 231), 
+      rgba(22, 17, 17, 0)
+    ) 1;
+}
+.inner-container-experience:nth-child(1){
+    border-left: 6px solid ;
+    border-image: 
+    linear-gradient(
+          to bottom, 
+          rgb(33, 231, 132), 
+          rgba(22, 17, 17, 0)
+        ) 1 100%;
+    }
 
-}
-.inner-container-experience h1{
-    font-weight: 500;
-    font-size: 2.5em;
-}
 .inner-container-experience h5{
     color: #FFA500;
     margin: 1em 0;
+} 
+footer p{
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 2em;
 }
