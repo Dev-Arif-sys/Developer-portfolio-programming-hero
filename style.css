@@ -22,6 +22,12 @@ body{
      justify-content: space-between;
      margin-bottom: 5em; 
 }
+@media (max-width:930px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 h1{
     font-size:3rem ;
     font-weight: 600;
@@ -46,10 +52,12 @@ img{
 }
 .inner-container-left{
    flex-basis: 46%;
+   margin-bottom: 1em;
     
 }
 .inner-container-right{
-   flex-basis: 46%;  
+   flex-basis: 46%; 
+   margin-bottom: 1em; 
 }
 .btn{
     display: inline-block;
@@ -74,7 +82,10 @@ img{
 }
 .inner-container-experience{
     padding: 1em 1em  5em 2em;
-    width: 46%;
+    width: 600px;
+    max-width: 90%;
+    
+    margin: 0 auto;
     box-shadow: 0px 2px 50px 1px rgba(0, 0, 0, 0.5);
 }
 .inner-container-experience:nth-child(2){
@@ -88,6 +99,7 @@ linear-gradient(
 }
 .inner-container-experience:nth-child(1){
     border-left: 6px solid ;
+    margin-bottom: 2em;
     border-image: 
     linear-gradient(
           to bottom, 
@@ -104,4 +116,61 @@ footer p{
     text-align: center;
     margin-top: 10em;
     margin-bottom: 2em;
+}
+.project-area h1{
+ text-align: center;
+ margin-bottom: 1em;
+ text-transform: uppercase;
+
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,350px));
+    grid-template-rows: auto;
+    gap: 1em;
+    justify-content: center;
+}
+
+
+.project{
+    position: relative;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 1em;
+    box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.5);
+}
+
+.project *{
+margin-bottom: 1em;
+}
+.btn:hover{
+    opacity: .7;
+    transition: .3s;
+}
+.project:hover{
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.5);
+  transition: .2s;
+}
+
+
+.contact{
+    margin: 3em 0;
+    text-align: center;
+}
+.contact-container{
+  
+    height:100%;
+}
+.contact-item{
+    border: 1px solid beige;
+    width: 50%;
+    height: 100%;
+}
+
+.contact-item input,textarea{
+    width: 100%;
+    font-size: 1.3em;
+    padding: .2em;
+    margin: 1em 0;
+ 
 }
