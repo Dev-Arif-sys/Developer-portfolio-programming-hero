@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+   
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-container{
+    background: url(/images/top-banner.png);
+    
+    background-repeat: no-repeat;
+   
+  
+}
+
+.container{
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+    
+}
+h1{
+    font-size:3rem ;
+    font-weight: 600;
+    line-height: 2em;
+}
+h2{
+    font-size: 2.5em;
+}
+h5{
+ margin: 1.2em 0;
+ font-size: 1.2em;
+}
+.name{
+    color: #FFA500;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.inner-container-left{
+   flex-basis: 46%;
+    
+}
+.inner-container-right{
+   flex-basis: 46%;
+  
+   
+    
+}
+.btn{
+    display: inline-block;
+    padding: .8em 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border-radius: 10px;
+    background-image:linear-gradient(#a04d3b,#FF7253);
+    margin-top: 1em;
+}
+
+.mid-container{
+    margin: 3em 0;
+}
+.experience-container{
+    margin-bottom: 4em;
+}
+.inner-container-experience{
+    padding: 1em 1em 5em;
+    background-color: white;
+    
+    width: 46%;
+    box-shadow: 0px 2px 50px 3px rgba(0, 0, 0, 0.5);
+
+}
+.inner-container-experience h1{
+    font-weight: 500;
+    font-size: 2.5em;
+}
+.inner-container-experience h5{
+    color: #FFA500;
+    margin: 1em 0;
+}
